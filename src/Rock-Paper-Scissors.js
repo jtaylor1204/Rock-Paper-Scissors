@@ -70,7 +70,6 @@ function playGame(e){
     cpuMsg.innerHTML = "The computer threw" + " " + botPick;
     winnerMsg.innerHTML = "You won!";
   }
-  console.log(winner);
 }
 }
 
