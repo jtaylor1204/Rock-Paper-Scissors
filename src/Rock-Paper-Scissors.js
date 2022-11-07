@@ -12,6 +12,8 @@ let rock = document.querySelector('#rock');
 let paper = document.querySelector('#paper');
 let scissors = document.querySelector('#scissors');
 let buttons = document.querySelectorAll('button');
+let scores = [0,0];
+let scoreTally = document.querySelector('#score');
 
 for ( let i = 0 ; i < buttons.length ; i++){
   buttons[i].addEventListener('click', playGame);
@@ -70,6 +72,15 @@ function playGame(e){
     cpuMsg.innerHTML = "The computer threw" + " " + botPick;
     winnerMsg.innerHTML = "You won!";
   }
+
+// Output scores
+if(winnerMsg.innerHTML === "You won!"){
+  scores[0]++;
+}
+if(winnerMsg.innerHTML === "The computer won!"){
+  scores[1]++;
+}
+scoreTally.innerHTML = 'You:  [ ' + scores[0]+ ' ] Computer: [ ' + scores[1]  + ' ]';
 }
 }
 
