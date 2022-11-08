@@ -4,6 +4,7 @@ let playerSelection;
 let botScore;
 let playerScore;
 let winner;
+let reset = document.querySelector('#reset');
 let winnerMsg = document.querySelector('#winner-msg');
 let cpuMsg = document.querySelector('#cpu-msg');
 let playerMsg = document.querySelector('#player-msg');
@@ -80,9 +81,20 @@ if(winnerMsg.innerHTML === "You won!"){
 if(winnerMsg.innerHTML === "The computer won!"){
   scores[1]++;
 }
-scoreTally.innerHTML = 'You:  [ ' + scores[0]+ ' ] Computer: [ ' + scores[1]  + ' ]';
+// scoreTally.innerHTML = 'You:  [ ' + scores[0]+ ' ] Computer: [ ' + scores[1]  + ' ]';
+    
+scoreTally.innerHTML = `<h1>You: [${scores[0]}] Computer: [${scores[1]}]</h1>`;
 }
 }
 
+// Reset Button
+reset.addEventListener('click', startOver);
 
-
+function startOver() {
+  scores[0] = 0;
+  scores[1] = 0;
+  scoreTally.innerHTML = `<h1>You: [0] Computer: [0]</h1>`;
+  playerMsg.innerHTML = ``;
+  cpuMsg.innerHTML = ``;
+  winnerMsg.innerHTML = ``;
+}
