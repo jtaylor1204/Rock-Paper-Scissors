@@ -1,12 +1,89 @@
 body {
-    background: RGB(16, 177, 222);
-    color: white;
+    background: #e3f6f5;
+    color: #272343;
+    font-family: 'Montserrat Alternates', sans-serif;
+  }
+
+  .btn-sizing {
+    width: 400px;
+    height: 270px;
+    color: rgba(0, 0, 0, 0);
+    border: none;
+    background-repeat: no-repeat;
+    
   }
   
   .container {
     text-align: center;
   }
+
+  .footer{
+    padding-top: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  footer{
+    padding-left: 60px;
+  }
+
+  .game-title {
+    font-size: 48px;
+  }
+
+  #paper{
+    width: 300px;
+    height: 270px;
+    color: rgba(0, 0, 0, 0);
+    border: none;
+    background-repeat: no-repeat;
+   
+   
+  }
   
+ 
+
+  #reset{
+    display: flex;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .reset-btn {
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    color: #ffffff;
+    font-size: 20px;
+    background: #272343;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    font-family: 'Montserrat Alternates', sans-serif;
+    width: 100px;
+    height: 25px;
+  }
+  
+  .reset-btn:hover {
+    background: #ffd803;
+    color:#272343;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Montserrat Alternates', sans-serif;
+  }
+  
+ 
+ 
+  #scissors{
+    width: 330px;
+    height: 250px;
+    color: rgba(0, 0, 0, 0);
+    border: none;
+    background-repeat: no-repeat;
+    white-space: nowrap;
+  }
   .throw {
     display: flex;
     justify-content: space-around;
@@ -14,26 +91,11 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
-  
-  .btn-sizing {
-    width: 300px;
-    height: 300px;
-    border: black solid 1px;
-    color: white;
-    border-radius: 8px;
-    background-color: #3595b8;
-    font-size: 20px;
-  }
-  
-  .btn-sizing:hover {
-    background-color: #7acee6;
-    color: black;
-    width: 330px;
-    height: 330px;
-  }
+
   
   
   
-  .game-title {
-    font-size: 48px;
-  }
+  
+ 
+
+  
