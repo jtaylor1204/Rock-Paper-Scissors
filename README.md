@@ -20,7 +20,7 @@ This site was created as a pair programming project for [Speak](https://www.noti
 
 - This is vanilla JS site.
 
-- Color inspiration from: [Color Hunt](https://colorhunt.co/)
+- Color inspiration from: [Happy Hues](https://www.happyhues.co/palettes/3)
 
 - Fonts from [Google Fonts](https://fonts.google.com/)
 
